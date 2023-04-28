@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 class PostModel {
   constructor(post) {
     this.id = post.id;
@@ -19,8 +21,19 @@ class PostModel {
     this.store.image = post.store.image.id;
   }
 
-  filterData() {
-
+  async sendRecentPosts(chatId) {
+    try {
+      const result = await axios.get('https://www.pelando.com.br/api/', {
+      })
+        .then(function (response) {
+        })
+        .catch(function (error) {
+        })
+        .finally(function () {
+        });
+    } catch (error) {
+      console.error(error);
+    }
   }
 }
 
