@@ -23,7 +23,7 @@ class PostModel {
 
   async sendRecentPosts(chatId) {
     try {
-      const result = await axios.get('https://www.pelando.com.br/api/', {
+      const result = await axios.get('https://www.pelando.com.br', {
       })
         .then(function (response) {
         })
